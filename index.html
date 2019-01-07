@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- all divaise -->
+    <title>Movies</title>
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Bootstrap 3 -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <style type="text/css" media="screen">
+        body {
+            padding-top: 80px;
+        }
+        #trailer .modal-dialog {
+            margin-top: 200px;
+            width: 640px;
+            height: 480px;
+        }
+        .hanging-close {
+            position: absolute;
+            top: -12px;
+            right: -12px;
+            z-index: 9001;
+        }
+        #trailer-video {
+            width: 100%;
+            height: 100%;
+        }
+        .movie-tile {
+            margin-bottom: 20px;
+            padding-top: 20px;
+        }
+        .movie-tile:hover {
+            background-color: #FAEBD7;
+            cursor: pointer;
+        }
+        .scale-media {
+            padding-bottom: 56.25%;
+            position: relative;
+        }
+        .scale-media iframe {
+            border: none;
+            height: 100%;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+            background-color: white;
+        }
+    </style>
+    
+</head>
+
+  <body background="http://www.mexat.com/vb/attachment.php?attachmentid=2160873&d=1476375893">
+    <!-- Main Page Content -->
+    <div class="container">
+      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Movies</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+  
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-toggle="modal" data-target="#myModal">
+    <img src="https://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg" width="220" height="342">
+</div>
+
+<!--<div class="col-md-6 col-lg-4">
+    <img src="https://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg" width="220" height="342" class="movie-tile" data-trailer-youtube-id="KYz2wyBy3kc" data-toggle="modal" data-target="#trailer">
+ <button type="button" data-toggle="modal" data-target="#myModal" title="Tooltip on bottom">
+  Toy Story
+</button>
+<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+</div>-->
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-toggle="modal" data-target="#project">
+    <img src="https://upload.wikimedia.org/wikipedia/sco/b/b0/Avatar-Teaser-Poster.jpg" width="220" height="342">
+</div>
+
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-toggle="modal" data-target="#project1">
+    <img src="https://upload.wikimedia.org/wikipedia/ar/d/d6/%D9%81%D9%84%D9%85_%D8%A7%D9%84%D9%84%D8%B9%D8%A8%D8%A9_1997.jpg" width="220" height="342">
+</div>
+    
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-toggle="modal" data-target="#project2">
+    <img src="http://photo.elcinema.com.s3.amazonaws.com/uploads/_640x_d42c2acde3336b4664676c08c1f336e90f0c1ec1141a9e7d8fe940a2cb0a59b3.jpg" width="220" height="342">
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-toggle="modal" data-target="#project3">
+    <img src="https://upload.wikimedia.org/wikipedia/en/1/11/School_of_Rock_Poster.jpg" width="220" height="342">
+</div>
+    
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-toggle="modal" data-target="#project4">
+    <img src="https://upload.wikimedia.org/wikipedia/en/5/50/RatatouillePoster.jpg" width="220" height="342"> 
+</div>
+
+    </div>
+
+<!-- Modal Toy Story-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" >
+    <div style="background-color:rgb(255, 235, 220);" class="modal-content" >
+      <div class="modal-header" >
+        <h4 class="modal-title" id="myModalLabel">Information about this movie</h4>
+      </div>
+  <div class="modal-body">
+    <img class="img-responsive" src="image/toy.jpeg">
+    <h2>Toy Story</h2>
+        Two toys, Woody and Buzz Lightyear despise each other like no other. But, when the toys are separated from their home,
+         a truce is formed between them all in an effort to journey home. A toy named Woody has it all.
+         <h3>Trailer:</h3>
+         <video width="550" height="320" controls>
+  <source src="video/Toy_Story.mp4" type="video/mp4">
+  <source src="video/Toy_Story.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+  </div>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Avatar-->
+<div class="modal fade" id="project" tabindex="-1" role="dialog" aria-labelledby="myLabel" aria-hidden="true" >
+  <div class="modal-dialog">
+    <div style="background-color:rgb(255, 235, 220);" class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myLabel">Information about this movie</h4>
+      </div>
+  <div class="modal-body">
+    <img class="img-responsive" src="image/Avatar.jpg">
+    <h2>Avatar</h2>
+        The series picks up seventy years after the end of the Avatar: The Last Airbender story arc with brand new characters and settings. The protagonist of the new series, Korra, the Avatar after Aang, is a hot-headed and rebellious young woman from the Southern Water Tribe who is "ready to take on the world"
+        <h3>Trailer:</h3>
+        <video width="550" height="320" controls>
+  <source src="video/Avatar.mp4" type="video/mp4">
+  <source src="video/Avatar.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+  </div>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal The Game-->
+<div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myLabel" aria-hidden="true" >
+  <div class="modal-dialog">
+    <div style="background-color:rgb(255, 235, 220);" class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myLabel">Information about this movie</h4>
+      </div>
+  <div class="modal-body">
+    <img class="img-responsive" src="image/the_game.jpg" width="1024">
+    <h2>The Game</h2>
+        It tells the story of a wealthy investment banker who is given a mysterious gift: participation in a game that integrates in strange ways with his everyday life. As the lines between the bankers real life and the game become more uncertain, hints of a large conspiracy become apparent.
+        <h3>Trailer:</h3>
+        <video width="550" height="320" controls>
+  <source src="video/The_Game.mp4" type="video/mp4">
+  <source src="video/The_Game.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+  </div>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal The Hunger Games-->
+<div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myLabel" aria-hidden="true" >
+  <div class="modal-dialog">
+    <div style="background-color:rgb(255, 235, 220);" class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myLabel">Information about this movie</h4>
+      </div>
+  <div class="modal-body">
+    <img class="img-responsive" src="image/the_hunger_games.jpg" width="1024">
+    <h2>The Hunger Games</h2>
+        Losing means certain death. Katniss Everdeen voluntarily takes her younger sisters place in the Hunger Games: a televised competition in which two teenagers from each of the twelve Districts of Panem are chosen at random to fight to the death.
+        <h3>Trailer:</h3>
+        <video width="550" height="320" controls>
+  <source src="video/The_Hunger_Games.mp4" type="video/mp4">
+  <source src="video/The_Hunger_Games.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+  </div>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal School Of Rock-->
+<div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myLabel" aria-hidden="true" >
+  <div class="modal-dialog">
+    <div style="background-color:rgb(255, 235, 220);" class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myLabel">Information about this movie</h4>
+      </div>
+  <div class="modal-body">
+    <img class="img-responsive" src="image/School_Of_Rock.jpg" width="1024">
+    <h2>School Of Rock</h2>
+        Down and out rock star Dewey Finn gets fired from his band, and he faces a mountain of debts and depression. He takes a job as a 4th grade substitute teacher at an uptight private school where his attitude and hijinx have a powerful effect on his students.
+        <h3>Trailer:</h3>
+        <video width="550" height="320" controls>
+  <source src="video/School_of_Rock.mp4" type="video/mp4">
+  <source src="video/School_of_Rock.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+  </div>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Ratatouille-->
+<div class="modal fade" id="project4" tabindex="-1" role="dialog" aria-labelledby="myLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div style="background-color:rgb(255, 235, 220);" class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myLabel">Information about this movie</h4>
+      </div>
+  <div class="modal-body">
+    <img class="img-responsive" src="image/Ratatouille.jpg" width="1024">
+    <h2>Ratatouille</h2>
+       Remy, a provincial rat with a wonderful sense of smell, hates garbage and risks death to enter a human kitchen where he discovers real food and the cooking of five-star chef, Anton Gusteau, author of "Anyone Can Cook." On the day Remy learns his hero has died, he is evicted and ends up alone in Paris.
+       <h3>Trailer:</h3>
+       <video width="550" height="320" controls>
+  <source src="video/Ratatouille.mp4" type="video/mp4">
+  <source src="video/Ratatouille.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+  </div>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+  </body>
+</html>
